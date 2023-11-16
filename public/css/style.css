@@ -56,7 +56,7 @@ body{
 }
 
 
-.section1-titulo{
+.section1-intro{
     text-align: center;
     background-color: #2F323D;
     height: calc(100vh - 140px);
@@ -64,21 +64,21 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.titulo{
+.intro{
     position: absolute;
     top: 40%;
 }
-.titulo > h2{
+.intro > h2{
     font-size: 48px;
     color: #AEF1FF;
     font-weight: 600;
     letter-spacing: 10px;
 }
-.titulo > img{
+.intro > img{
     max-width: 25vw;
     margin: 10vh 0;
 }
-.titulo > h3{
+.intro > h3{
     font-size: 24px;
     color: #FFD79C;
     font-weight: 400;
@@ -87,15 +87,45 @@ body{
 
 
 
+.section2-about{
+    background-color: #2C3862;
+    padding: 5vh 15px;    
+}
+.titulo{
+    display: flex;
+    gap: 20px;
+}
+.titulo :last-child{
+    color: #AEF1FF;
+}
+.titulo :first-child{
+    color: #E7618B;
+}
+.section2-about > p{
+    padding-left: 90px;
+}
 
 
-
+.section3-tecnologias{
+    background-color: #22282C;
+    padding: 5vh 15px;    
+    min-height: 500px;
+    position: relative;
+}
+.tecnologias-lista{
+    position: absolute;
+    right: 0%;
+    background-color: #475457;
+    padding: 20px;
+    top: 40%;
+    width: 40%;
+}
 
 
 
 /*_______________________________________________________________*/
 @media (min-width:424px){
-    .header, .titulo{
+    .header, .intro{
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -103,7 +133,7 @@ body{
 
 /*_______________________________________________________________*/
 @media (min-width:767px){
-    .header, .titulo{
+    .header, .intro{
         margin-left: 15px;
         margin-right: 15px;
     }
