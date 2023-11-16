@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+* a{
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+.colores{
+color: #272C30;
+color: #328DC8;
+color: #475457;
+color: #22282C;
+color: #282828;
+color: #9399ae;
+color: #AEF1FF;
+color: #FFD79C;
+color: #E7618B;
+color: #2C3862;
+}
+body{
+    font-family: 'Source Code Pro';
+    background-color: #272C30;
+}
+
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 140px;
+}
+.navbar{
+    display: none;
+}
+.burger-menu{
+    color: #328DC8;
+    display: block;
+    max-width: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1;
+}
+.burger-links{
+    display: none;
+}
+
+
+.section1-titulo{
+    text-align: center;
+    background-color: #2F323D;
+    height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    position: absolute;
+    top: 40%;
+}
+.titulo > h2{
+    font-size: 48px;
+    color: #AEF1FF;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+.titulo > img{
+    max-width: 25vw;
+    margin: 10vh 0;
+}
+.titulo > h3{
+    font-size: 24px;
+    color: #FFD79C;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+
+/*_______________________________________________________________*/
+@media (min-width:424px){
+    .header, .titulo{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/*_______________________________________________________________*/
+@media (min-width:767px){
+    .header, .titulo{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/*_______________________________________________________________*/
+@media (min-width:960px){
+    .header{
+        max-width: 940px;
+    }
+}
+
+/*_______________________________________________________________*/
+@media (min-width:1240px){
+    .header{
+        max-width: 1080px;
+    }
+    .navbar{
+        display: inline-block;
+        width: 40vw;
+    }
+    .navbar > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        max-width: 40vw;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+}

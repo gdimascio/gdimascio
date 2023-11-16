@@ -1,0 +1,13 @@
+#272C30
+#328DC8
+#475457
+#22282C
+#282828
+#9399ae
+#AEF1FF
+#FFD79C
+#E7618B
+#2C3862
+
+Poppins
+Source Code Pro
