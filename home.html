@@ -59,15 +59,15 @@
             </div>
         </section>
 
-        <section class="section2-about">
+        <section class="section2-about section-title-pdd">
             <div class="titulo">
-                <h2>ABOUT</h2>
+                <h2>ACERCA DE</h2>
                 <h2>GUIDO DI MASCIO</h2>
             </div>
             <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque perspiciatis minus asperiores fuga dolorum voluptate ab laboriosam debitis optio facilis voluptatem obcaecati, itaque temporibus impedit odit laborum? Neque, autem rem?</P>
         </section>
 
-        <section class="section3-tecnologias">
+        <section class="section3-tecnologias section-title-pdd">
             <div class="titulo">
                 <h2>TECNOLOGÍAS</h2>
             </div>
@@ -88,16 +88,51 @@
             </div>
         </section>
 
-        <section>
+        <section class="section4-proyectos section-title-pdd">
             <div class="titulo">
-                <h2>TECNOLOGÍAS</h2>
+                <h2>PROYECTOS</h2>
             </div>
+            <p>PRÓXIMAMENTE</p>
         </section>
 
-
-
+        <section class="section5-contacto">
+            <div class="form">
+                <form action="" method="post">
+                    <input type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido *" >
+                    <input type="email" name="mail" id="mail" required placeholder="Email *">
+                    <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                    <button class="enviar-button button" type="submit">Enviar consulta</button>
+                </form>
+            </div>
+        </section>
     </main>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-izq">
+            <p>GUIDO DI MASCIO</p>
+            <p>+54 9 (11) 5577 3362</p>
+            <p>guido.dimascio@gmail.com</p>
+        </div>
+        <div class="footer-der">
+            <a href="https://www.linkedin.com/in/guidodimascio/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/gdimascio"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- BOTONES -->
+    <div>
+        <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="whatsapp-button">
+            <img src="./public/img/WhatsApp.png" width="60px" alt>
+        </a>
+        <button onclick="topFunction()" id="_top-btn" class="scroll-to-top-button" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+        <script>
+            var mybutton = document.getElementById("_top-btn");
+            window.onscroll = function() {scrollFunction()};
+        </script>
+    </div>
 
 
 

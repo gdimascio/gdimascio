@@ -9,5 +9,9 @@
 #E7618B
 #2C3862
 
+#292C36
+#2F323D
+#22252E
+
 Poppins
 Source Code Pro
