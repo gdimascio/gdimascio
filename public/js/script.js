@@ -12,9 +12,17 @@ function topFunction() {
 
 function burger_menu(){
     var x = document.getElementById("_burger-links");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
+    // if (x.style.display === "flex") {
+    //     x.style.display = "none";
+    // } else {
+    //     x.style.display = "flex";
+    // }
+    if (x.style.transform == "translateX(0px)") {
+        x.style.transform = "translateX(100%)";
+        console.log("0%")
     } else {
-        x.style.display = "flex";
+        x.style.transform = "translateX(0px)";
+        console.log("100%")
     }
+
 }

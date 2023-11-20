@@ -62,9 +62,6 @@ body{
     line-height: 1;
 }
 .burger-links{
-    display: none;
-}
-.burger-links{
     /* display: none; */
     list-style: none;
     background-color: #191919;
@@ -77,6 +74,8 @@ body{
     top: 0;
     height: 100vh;
     z-index: 1;
+    transform: translateX(100%);
+    transition-duration: 0.25s;
 }
 .burger-links > i{
     margin-bottom: 20px;
@@ -171,10 +170,20 @@ body{
 .tecnologias-lista{
     position: absolute;
     right: 0%;
-    background-color: #475457;
+    background-color: #47545770;
     padding: 20px;
-    top: 40%;
+    top: 50%;
     width: 40%;
+    height: 50%;
+    backdrop-filter: blur(2px);
+    transform: translate(-0%, -50%);
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
 }
 
 .section4-proyectos{
