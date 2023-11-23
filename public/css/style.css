@@ -166,10 +166,12 @@ header{display: none !important;}
     background-color: #22282C;
     min-height: 500px;
     position: relative;
+    overflow: hidden;
+
 }
 .tec-window{
     min-height: 500px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 .tec-window > img{
     max-width: 60px;
@@ -182,7 +184,7 @@ header{display: none !important;}
 }
 .tecnologias-lista{
     position: absolute;
-    right: 0%;
+    right: -50%;
     background-color: #47545770;
     padding: 20px;
     top: 50%;
@@ -190,6 +192,10 @@ header{display: none !important;}
     backdrop-filter: blur(1px);
     transform: translate(-0%, -50%);
     z-index: 1;
+}
+.section3-tecnologias:hover .tecnologias-lista { 
+    transition: all 0.5s ease-out;
+    right: 0;
 }
 
 .ul{
