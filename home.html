@@ -76,19 +76,37 @@
                 <h2>TECNOLOGÍAS</h2>
             </div>
 
-            <div>
+            <div class="tec-window">
                 <!-- TODO: distintos logos de tecnologias flotando en el espacio "section3-tecnologias" -->
                 <div class="tecnologias-lista">
                     <ul class="ul">
-                        <li>* LISTA</li>
-                        <li>* LISTA</li>
-                        <li>* LISTA</li>
-                        <li>* LISTA</li>
-                        <li>* LISTA</li>
-                        <li>* LISTA</li>
+                        <li>* HTML</li>
+                        <li>* CSS</li>
+                        <li>* Javascript</li>
+                        <li>* Node.js</li>
+                        <li>* Git</li>
+                        <li>* MySQL</li>
+                        <li>* Typescript</li>
+                        <li>* Database</li>
+                        <li>* Firebase</li>
+                        <li>* API</li>
+                        <li>* Figma</li>
+                        <li>* MongoDB</li>
+                        <li>* React</li>
+                        <li>* Bootstrap</li>
                     </ul>
                 </div>
-    
+                <img src="./public/img/Tecnologias/HTML5.png" id="__img">
+                <img src="./public/img/Tecnologias/CSS.png" id="__img">
+                <img src="./public/img/Tecnologias/Javascript.png" id="__img">
+                <img src="./public/img/Tecnologias/Node.png" id="__img">
+                <img src="./public/img/Tecnologias/Github.png" id="__img">
+
+                <script>
+                    var imgs = document.querySelectorAll("#__img");
+                    driftImage();
+                    setInterval(driftImage, 4000);
+                </script>
             </div>
 
         </section>

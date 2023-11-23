@@ -1,3 +1,5 @@
+
+// Scroll to top function
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "inline-block";
@@ -10,19 +12,20 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+// Displays the navbar in lower media
 function burger_menu(){
     var x = document.getElementById("_burger-links");
-    // if (x.style.display === "flex") {
-    //     x.style.display = "none";
-    // } else {
-    //     x.style.display = "flex";
-    // }
     if (x.style.transform == "translateX(0px)") {
         x.style.transform = "translateX(100%)";
-        console.log("0%")
     } else {
         x.style.transform = "translateX(0px)";
-        console.log("100%")
     }
+}
 
+// Drift function for the images in Tecnilogies
+function driftImage() {
+    imgs.forEach(img => {
+        img.style.top = (Math.random() * 440) + 60 + 'px';
+        img.style.left = (Math.random() * 70) + 10 + 'vw';
+    })
 }
