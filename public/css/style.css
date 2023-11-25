@@ -29,9 +29,9 @@ body{
 
 
 /* ---Colapsar modulos para concentracion de trabajo--- */
-header{display: none !important;}
-.section1-intro{display: none !important;}
-.section2-about{display: none !important;}
+/* header{display: none !important;} */
+/* .section1-intro{display: none !important;} */
+/* .section2-about{display: none !important;} */
 /* .section3-tecnologias{display: none !important;} */
 /* .section4-proyectos{display: none !important;} */
 /* .section5-contacto{display: none !important;} */
@@ -67,7 +67,6 @@ header{display: none !important;}
     background-color: #191919;
     padding: 20px 15%;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
     position: fixed;
     right: 0;
@@ -76,13 +75,16 @@ header{display: none !important;}
     z-index: 1;
     transform: translateX(100%);
     transition-duration: 0.25s;
+    display: flex;
+    align-items: center;
+    z-index: 2;
 }
 .burger-links > i{
     margin-bottom: 20px;
     color: #AEF1FF;
 }
 .burger-links ul {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,6 +104,102 @@ header{display: none !important;}
 .burger-links li:hover a{
     color: #AEF1FF;
     opacity: 100%;
+}
+#_lang-es{
+    display: none;
+}
+.lang{
+    position: absolute;
+    bottom: 7%;
+}
+.lang > span{
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    width: 50px;
+    text-align: center;
+}
+.check-toggle{
+    visibility: hidden;
+    position: absolute;
+}
+.check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.check-toggle-round + label {
+    padding: 2px;
+    width: 97px;
+    height: 35px;
+    background-color: #2F323D;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;  
+}
+.check-toggle-round:checked ~ .off {
+    color: #191919;
+}
+.check-toggle-round:checked ~ .on {
+    color: #AEF1FF;
+}
+.lang > span.on {
+    left: 0;
+    padding-left: 2px;
+    color: #191919;
+}
+.lang > span.off {
+    right: 0;
+    padding-right: 2px;
+    color: #AEF1FF;
+}
+.check-toggle-round + label:before, .check-toggle-round + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+.check-toggle-round + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #272C30;
+    
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+}
+.check-toggle-round + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 48px;
+    background-color: #191919;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+}
+.check-toggle-round:checked + label:after {
+    margin-left: 40px;
 }
 
 
@@ -150,10 +248,10 @@ header{display: none !important;}
 .titulo > h2{
     font-size: 24px;
 }
-.titulo :last-child{
+.titulo-gd{
     color: #AEF1FF;
 }
-.titulo :first-child{
+.titulo-main{
     color: #E7618B;
 }
 .section2-about > p{
@@ -171,7 +269,7 @@ header{display: none !important;}
 }
 .tec-window{
     min-height: 500px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .tec-window > img{
     max-width: 60px;
@@ -192,12 +290,11 @@ header{display: none !important;}
     backdrop-filter: blur(1px);
     transform: translate(-0%, -50%);
     z-index: 1;
+    transition: all 0.5s ease-out;
 }
 .section3-tecnologias:hover .tecnologias-lista { 
-    transition: all 0.5s ease-out;
     right: 0;
 }
-
 .ul{
     display: flex;
     flex-direction: column;

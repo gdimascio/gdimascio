@@ -29,3 +29,26 @@ function driftImage() {
         img.style.left = (Math.random() * 70) + 10 + 'vw';
     })
 }
+
+//LANGUAGE FUNCTIONS
+
+function hideLang(lang){
+    lang.forEach(lang => {
+        lang.style.display = "none";
+    })}
+function showLang(lang){
+    lang.forEach(lang => {
+        lang.style.display = "block";
+    })}
+
+function switchLang(){
+    var langToggle = document.getElementById("lang-toggle");
+    var langEn = document.querySelectorAll("#_lang-en");
+    var langEs = document.querySelectorAll("#_lang-es");
+    if(langToggle.checked == true){
+        showLang(langEn);
+        hideLang(langEs);
+    }else{
+        showLang(langEs);
+        hideLang(langEn);
+        }}

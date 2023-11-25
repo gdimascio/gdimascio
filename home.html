@@ -31,11 +31,11 @@
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">SOBRE MI</a></li>
-                    <li><a href="#">TECNOLOGÍAS</a></li>
-                    <li><a href="#">PROYECTOS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
+                    <li><a href="#about">SOBRE MI</a></li>
+                    <li><a href="#tecnologias">TECNOLOGÍAS</a></li>
+                    <li><a href="#proyectos">PROYECTOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    </ul>
             </nav>
             <a href="javascript:void(0);" class="burger-menu" onclick="burger_menu()"><i class="fas fa-bars"></i></a>
         </div>
@@ -43,11 +43,23 @@
         <div class="burger-links" id="_burger-links" style="transform: translateX(100%);">
             <i onclick="burger_menu()" class="fa-solid fa-xmark"></i>
             <ul>
-                <li><a href="#">SOBRE MI</a></li>
-                <li><a href="#">TECNOLOGÍAS</a></li>
-                <li><a href="#">PROYECTOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#about">SOBRE MI</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#tecnologias">TECNOLOGÍAS</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#proyectos">PROYECTOS</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#contacto">CONTACTO</a></li>
+
+                <li id="_lang-en"><a onclick="burger_menu()" href="#about">ABOUT</a></li>
+                <li id="_lang-en"><a onclick="burger_menu()" href="#tecnologias">TECHNOLOGIES</a></li>
+                <li id="_lang-en"><a onclick="burger_menu()" href="#proyectos">PROYECTS</a></li>
+                <li id="_lang-en"><a onclick="burger_menu()" href="#contacto">CONTACT</a></li>
             </ul>
+
+            <div class="lang">
+                <input type="checkbox" id="lang-toggle" class="check-toggle check-toggle-round" checked onclick="switchLang()">
+                <label for="lang-toggle"></label>
+                <span class="on">En</span>
+                <span class="off">Es</span>
+            </div>
         </div>
     </header>
 
@@ -62,18 +74,20 @@
         </section>
 
         <!-- Seccion 2: About -->
-        <section class="section2-about section-title-pdd">
+        <section class="section2-about section-title-pdd" id="about">
             <div class="titulo">
-                <h2>ACERCA DE</h2>
-                <h2>GUIDO DI MASCIO</h2>
+                <h2 id="_lang-es" class="titulo-main">ACERCA DE</h2>
+                <h2 id="_lang-en" class="titulo-main">ABOUT</h2>
+                <h2 class="titulo-gd">GUIDO DI MASCIO</h2>
             </div>
             <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque perspiciatis minus asperiores fuga dolorum voluptate ab laboriosam debitis optio facilis voluptatem obcaecati, itaque temporibus impedit odit laborum? Neque, autem rem?</P>
         </section>
 
         <!-- Seccion 3: Tecnologias -->
-        <section class="section3-tecnologias section-title-pdd">
+        <section class="section3-tecnologias section-title-pdd" id="tecnologias">
             <div class="titulo">
-                <h2>TECNOLOGÍAS</h2>
+                <h2 id="_lang-es" class="titulo-main">TECNOLOGÍAS</h2>
+                <h2 id="_lang-en" class="titulo-main">TECHNOLOGIES</h2>
             </div>
 
             <div class="tec-window">
@@ -112,15 +126,17 @@
         </section>
 
         <!-- Seccion 4: Proyectos -->
-        <section class="section4-proyectos section-title-pdd">
+        <section class="section4-proyectos section-title-pdd" id="proyectos">
             <div class="titulo">
-                <h2>PROYECTOS</h2>
+                <h2 id="_lang-es" class="titulo-main">PROYECTOS</h2>
+                <h2 id="_lang-en" class="titulo-main">PROJECTS</h2>
             </div>
-            <p>PRÓXIMAMENTE</p>
+            <p id="_lang-es">PRÓXIMAMENTE</p>
+            <p id="_lang-en">COMING SOON</p>
         </section>
 
         <!-- Seccion 4: Contacto -->
-        <section class="section5-contacto">
+        <section class="section5-contacto" id="contacto">
             <div class="form">
                 <form action="" method="post">
                     <input type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido *" >
