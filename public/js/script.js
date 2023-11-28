@@ -22,6 +22,7 @@ function burger_menu(){
     }
 }
 
+
 // Drift function for the images in Tecnilogies
 function driftImage() {
     imgs.forEach(img => {
@@ -30,8 +31,8 @@ function driftImage() {
     })
 }
 
-//LANGUAGE FUNCTIONS
 
+//LANGUAGE FUNCTIONS
 function hideLang(lang){
     lang.forEach(lang => {
         lang.style.display = "none";
@@ -52,3 +53,5 @@ function switchLang(){
         showLang(langEs);
         hideLang(langEn);
         }}
+
+        

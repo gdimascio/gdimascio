@@ -275,8 +275,7 @@ body{
     max-width: 60px;
     max-height: 60px;
     position: absolute;
-    transition-duration: 5s;
-    top: random;
+    transition-duration: 4s;
     /* top: 500px; */
     /* left: 80vw; */
 }
