@@ -234,7 +234,7 @@ header{
 }
 
 
-/*--------------------------------------------------------------------------------------------------------*/
+/*_______________________________________________________________*/
 .section1-intro{
     text-align: center;
     background-color: #2F323D;
@@ -548,6 +548,7 @@ footer > div{
 @media (min-width:960px){
     .header{
         max-width: 940px;
+        margin: 0 auto;
     }
 }
 
@@ -560,6 +561,7 @@ footer > div{
         display: none;
     }
     .sct-mg{
+        max-width: 1280px;
         margin: 0 auto;
     }
     .section-title-pdd{
@@ -593,7 +595,7 @@ footer > div{
 }
 
 /*_______________________________________________________________*/
-@media (min-width:1460px){
+@media (min-width:2445px){
     .header{
         max-width: 1480px;
     }
