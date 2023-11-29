@@ -24,34 +24,48 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header">
-            <div class="logo">
+        <div class="header sct-mg">
+            <div class="logo" style="width: 200px;">
                 <a href="./index.html"><img src="./public/img/logo.png" alt="LOGO" class="logo"></a>
+                <p>Guido Di Mascio</p>
             </div>
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#about">SOBRE MI</a></li>
-                    <li><a href="#tecnologias">TECNOLOGÍAS</a></li>
-                    <li><a href="#proyectos">PROYECTOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li id="_lang-en"><a href="#about">ABOUT</a></li>
+                    <li id="_lang-en"><a href="#tecnologias">TECHNOLOGIES</a></li>
+                    <li id="_lang-en"><a href="#proyectos">PROYECTS</a></li>
+                    <li id="_lang-en"><a href="#contacto">CONTACT</a></li>
+    
+                    <li id="_lang-es"><a href="#about">SOBRE MI</a></li>
+                    <li id="_lang-es"><a href="#tecnologias">TECNOLOGÍAS</a></li>
+                    <li id="_lang-es"><a href="#proyectos">PROYECTOS</a></li>
+                    <li id="_lang-es"><a href="#contacto">CONTACTO</a></li>
                     </ul>
             </nav>
+
+            <div class="lang lang-navbar">
+                <input type="checkbox" id="lang-toggle" class="check-toggle check-toggle-round" checked onclick="switchLang()">
+                <label for="lang-toggle"></label>
+                <span class="on">En</span>
+                <span class="off">Es</span>
+            </div>
+
             <a href="javascript:void(0);" class="burger-menu" onclick="burger_menu()"><i class="fas fa-bars"></i></a>
         </div>
 
         <div class="burger-links" id="_burger-links" style="transform: translateX(100%);">
             <i onclick="burger_menu()" class="fa-solid fa-xmark"></i>
             <ul>
-                <li id="_lang-es"><a onclick="burger_menu()" href="#about">SOBRE MI</a></li>
-                <li id="_lang-es"><a onclick="burger_menu()" href="#tecnologias">TECNOLOGÍAS</a></li>
-                <li id="_lang-es"><a onclick="burger_menu()" href="#proyectos">PROYECTOS</a></li>
-                <li id="_lang-es"><a onclick="burger_menu()" href="#contacto">CONTACTO</a></li>
-
                 <li id="_lang-en"><a onclick="burger_menu()" href="#about">ABOUT</a></li>
                 <li id="_lang-en"><a onclick="burger_menu()" href="#tecnologias">TECHNOLOGIES</a></li>
                 <li id="_lang-en"><a onclick="burger_menu()" href="#proyectos">PROYECTS</a></li>
                 <li id="_lang-en"><a onclick="burger_menu()" href="#contacto">CONTACT</a></li>
+
+                <li id="_lang-es"><a onclick="burger_menu()" href="#about">SOBRE MI</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#tecnologias">TECNOLOGÍAS</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#proyectos">PROYECTOS</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#contacto">CONTACTO</a></li>
             </ul>
 
             <div class="lang">
@@ -66,8 +80,8 @@
     <main>
         <!-- Seccion 1: Intro -->
         <section class="section1-intro">
-            <div class="intro">
-                <h2>GUIDO <br>DI MASCIO</h1>
+            <div class="intro sct-mg">
+                <h2>GUIDO <br class="br-dlt"> DI MASCIO</h1>
                 <img src="./public/img/logo2.PNG" alt="">
                 <h3>Web Developer</h3>
             </div>
@@ -172,8 +186,8 @@
             </div>
             <br>
             <div class="cv-links">
-                <a id="_lang-en" href="./public/CV(en).pdf" download="Guido Di Mascio">Download CV</a>
-                <a id="_lang-es" href="./public/CV(es).pdf" download="Guido Di Mascio">Descargar CV</a>
+                <a id="_lang-en" href="./public/CV(en).pdf" download="Guido Di Mascio">CV</a>
+                <a id="_lang-es" href="./public/CV(es).pdf" download="Guido Di Mascio">CV</a>
             </div>
         </div>
 
