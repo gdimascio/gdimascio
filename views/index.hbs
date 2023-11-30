@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0fce3c0945.js" crossorigin="anonymous"></script>
+
+    <!-- icon -->
+    <link rel="icon" href="./public/img/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Source+Code+Pro:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+    <title>Guido Di Mascio</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header sct-mg">
+            <div class="logo" style="width: 200px;">
+                <a href="/"><img src="img/logo.png" alt="LOGO" class="logo"></a>
+                <p>Guido Di Mascio</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li id="_lang-en"><a href="#about">ABOUT</a></li>
+                    <li id="_lang-en"><a href="#tecnologias">TECHNOLOGIES</a></li>
+                    <li id="_lang-en"><a href="#proyectos">PROYECTS</a></li>
+                    <li id="_lang-en"><a href="#contacto">CONTACT</a></li>
+    
+                    <li id="_lang-es"><a href="#about">SOBRE MI</a></li>
+                    <li id="_lang-es"><a href="#tecnologias">TECNOLOGÍAS</a></li>
+                    <li id="_lang-es"><a href="#proyectos">PROYECTOS</a></li>
+                    <li id="_lang-es"><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+            </nav>
+
+            <div class="lang lang-navbar">
+                <input type="checkbox" id="lang-toggle" class="check-toggle check-toggle-round" checked onclick="switchLang()">
+                <label for="lang-toggle"></label>
+                <span class="on">En</span>
+                <span class="off">Es</span>
+            </div>
+
+            <a href="javascript:void(0);" class="burger-menu" onclick="burger_menu()"><i class="fas fa-bars"></i></a>
+        </div>
+
+        <div class="burger-links" id="_burger-links" style="transform: translateX(100%);">
+            <i onclick="burger_menu()" class="fa-solid fa-xmark"></i>
+            <ul>
+                <li id="_lang-en"><a onclick="burger_menu()" href="#about">ABOUT</a></li>
+                <li id="_lang-en"><a onclick="burger_menu()" href="#tecnologias">TECHNOLOGIES</a></li>
+                <li id="_lang-en"><a onclick="burger_menu()" href="#proyectos">PROYECTS</a></li>
+                <li id="_lang-en"><a onclick="burger_menu()" href="#contacto">CONTACT</a></li>
+
+                <li id="_lang-es"><a onclick="burger_menu()" href="#about">SOBRE MI</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#tecnologias">TECNOLOGÍAS</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#proyectos">PROYECTOS</a></li>
+                <li id="_lang-es"><a onclick="burger_menu()" href="#contacto">CONTACTO</a></li>
+            </ul>
+
+            <div class="lang">
+                <input type="checkbox" id="lang-toggle" class="check-toggle check-toggle-round" checked onclick="switchLang()">
+                <label for="lang-toggle"></label>
+                <span class="on">En</span>
+                <span class="off">Es</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seccion 1: Intro -->
+        <section class="section1-intro">
+            <div class="intro sct-mg">
+                <h2>GUIDO <br class="br-dlt"> DI MASCIO</h1>
+                <img src="./public/img/logo2.PNG" alt="">
+                <h3>Web Developer</h3>
+            </div>
+        </section>
+
+        <!-- Seccion 2: About -->
+        <section class="section2-about section-title-pdd" id="about">
+            <div class="titulo">
+                <h2 id="_lang-es" class="titulo-main">ACERCA DE</h2>
+                <h2 id="_lang-en" class="titulo-main">ABOUT</h2>
+                <h2 class="titulo-gd">GUIDO DI MASCIO</h2>
+            </div>
+            <P id="_lang-es">Lorem en español</P>
+            <P id="_lang-en">Lorem en ingles</P>
+        </section>
+
+        <!-- Seccion 3: Tecnologias -->
+        <section class="section3-tecnologias section-title-pdd" id="tecnologias">
+            <div class="titulo">
+                <h2 id="_lang-es" class="titulo-main">TECNOLOGÍAS</h2>
+                <h2 id="_lang-en" class="titulo-main">TECHNOLOGIES</h2>
+            </div>
+
+            <div class="tec-window">
+                <div class="tecnologias-lista">
+                    <ul class="ul">
+                        <li>* HTML</li>
+                        <li>* CSS</li>
+                        <li>* Javascript</li>
+                        <li>* Node.js</li>
+                        <li>* Express.js</li>
+                        <li>* Git</li>
+                        <li>* SQL</li>
+                        <li>* Typescript</li>
+                        <li>* Database</li>
+                        <li>* Firebase</li>
+                        <li>* API</li>
+                        <li>* Figma</li>
+                        <li>* MongoDB</li>
+                        <li>* React</li>
+                        <li>* Bootstrap</li>
+                    </ul>
+                </div>
+                <img src="img/Tecnologias/HTML5.png" id="__img">
+                <img src="img/Tecnologias/CSS.png" id="__img">
+                <img src="img/Tecnologias/Javascript.png" id="__img">
+                <img src="img/Tecnologias/Node.png" id="__img">
+                <img src="img/Tecnologias/Github.png" id="__img">
+                <img src="img/Tecnologias/React.png" id="__img">
+                <img src="img/Tecnologias/SQL.png" id="__img">
+                <img src="img/Tecnologias/Firebase.png" id="__img">
+                <img src="img/Tecnologias/Figma.png" id="__img">
+                <img src="img/Tecnologias/Mongodb.png" id="__img">
+                <img src="img/Tecnologias/Bootstrap.png" id="__img">
+                <img src="img/Tecnologias/Express.png" id="__img">
+
+                <script>
+                    var imgs = document.querySelectorAll("#__img");
+                    driftImage();
+                    setInterval(driftImage, 4000);
+                </script>
+            </div>
+
+        </section>
+
+        <!-- Seccion 4: Proyectos -->
+        <section class="section4-proyectos section-title-pdd" id="proyectos">
+            <div class="titulo">
+                <h2 id="_lang-es" class="titulo-main">PROYECTOS</h2>
+                <h2 id="_lang-en" class="titulo-main">PROJECTS</h2>
+            </div>
+            <p id="_lang-es">PRÓXIMAMENTE</p>
+            <p id="_lang-en">COMING SOON</p>
+        </section>
+
+        <!-- Seccion 4: Contacto -->
+        <section class="section5-contacto" id="contacto">
+            <div class="form">
+                <form action="/enviar" method="post">
+                    <input type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido *" >
+                    <input type="email" name="email" id="email" required placeholder="Email *">
+                    <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
+                    <textarea name="mensaje" id="mensaje" required placeholder="Mensaje"></textarea>
+                    <button class="enviar-button button" type="submit">Enviar consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-izq">
+            <p>GUIDO DI MASCIO</p>
+            <p>+54 9 (11) 5577 3362</p>
+            <p>guido.dimascio@gmail.com</p>
+        </div>
+        <div class="footer-der">
+            <div>
+                <a href="https://www.linkedin.com/in/guidodimascio/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/gdimascio"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <br>
+            <div class="cv-links">
+                <a id="_lang-en" href="./public/CV(en).pdf" download="Guido Di Mascio">CV</a>
+                <a id="_lang-es" href="./public/CV(es).pdf" download="Guido Di Mascio">CV</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- BOTONES -->
+    <div>
+        <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="whatsapp-button">
+            <img src="img/WhatsApp.png" width="60px" alt>
+        </a>
+        <button onclick="topFunction()" id="_top-btn" class="scroll-to-top-button" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+        <script>
+            var mybutton = document.getElementById("_top-btn");
+            window.onscroll = function() {scrollFunction()};
+        </script>
+    </div>
+</body>
+</html>
