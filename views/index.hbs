@@ -150,8 +150,8 @@
         <!-- Seccion 4: Proyectos -->
         <section class="section4-proyectos section-title-pdd" id="proyectos">
             <div class="titulo">
-                <h2 id="_lang-es" class="titulo-main">PROYECTOS</h2>
                 <h2 id="_lang-en" class="titulo-main">PROJECTS</h2>
+                <h2 id="_lang-es" class="titulo-main">PROYECTOS</h2>
             </div>
             <p id="_lang-es">PRÓXIMAMENTE</p>
             <p id="_lang-en">COMING SOON</p>
@@ -159,7 +159,17 @@
 
         <!-- Seccion 4: Contacto -->
         <section class="section5-contacto" id="contacto">
-            <div class="form">
+            <div class="form" id="_lang-en">
+                <form action="/enviar" method="post">
+                    <input type="text" name="nombre" id="nombre" required placeholder="Full Name *" >
+                    <input type="email" name="email" id="email" required placeholder="Email *">
+                    <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
+                    <textarea name="mensaje" id="mensaje" required placeholder="message"></textarea>
+                    <button class="enviar-button button" type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="form" id="_lang-es">
                 <form action="/enviar" method="post">
                     <input type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido *" >
                     <input type="email" name="email" id="email" required placeholder="Email *">
