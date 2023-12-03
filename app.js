@@ -10,12 +10,10 @@ const port = process.env.PORT || 3001;
 
 // HBS
 app.set('view engine', 'hbs');
-
-// Configurar directorio de vistas
-app.set('views', __dirname + '/views');
+hbs.registerPartials(__dirname + "/views/partials");
 
 // MIDDLEWARE
-// app.use("/", express.static(__dirname + './public'));
+// app.use("/", express.static(__dirname + './public'));            //// BORRAME? /////
 app.use(express.static(__dirname + '/public'));
 // Configurar express para procesar datos de formulario
 app.use(express.urlencoded({extended: false}));

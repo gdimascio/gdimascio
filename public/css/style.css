@@ -39,6 +39,7 @@ body{
 
 :root{
     --header-height: 50px;
+    --labelAfterMargin: 40px;
 }
 
 header{
@@ -100,7 +101,6 @@ header{
     top: 0;
     height: 100vh;
     width: 280px;
-    z-index: 1;
     transform: translateX(100%);
     transition-duration: 0.25s;
     display: flex;
@@ -143,7 +143,7 @@ header{
     position: absolute;
     bottom: 7%;
 }
-.lang > span{
+.on, .off{
     position: absolute;
     top: 10px;
     pointer-events: none;
@@ -159,7 +159,7 @@ header{
     visibility: hidden;
     position: absolute;
 }
-.check-toggle + label {
+.label-toggle {
     display: block;
     position: relative;
     cursor: pointer;
@@ -169,7 +169,7 @@ header{
     -ms-user-select: none;
     user-select: none;
 }
-.check-toggle-round + label {
+.label-toggle {
     padding: 2px;
     width: 97px;
     height: 35px;
@@ -180,28 +180,22 @@ header{
     -o-border-radius: 60px;
     border-radius: 60px;  
 }
-.check-toggle-round:checked ~ .off {
-    color: #191919;
-}
-.check-toggle-round:checked ~ .on {
-    color: #AEF1FF;
-}
-.lang > span.on {
+.on {
     left: 0;
     padding-left: 2px;
-    color: #191919;
-}
-.lang > span.off {
-    right: 0;
-    padding-right: 2px;
     color: #AEF1FF;
 }
-.check-toggle-round + label:before, .check-toggle-round + label:after {
+.off {
+    right: 0;
+    padding-right: 2px;
+    color: #191919;
+}
+.label-toggle:before, .label-toggle:after {
     display: block;
     position: absolute;
     content: "";
 }
-.check-toggle-round + label:before {
+.label-toggle:before {
     top: 2px;
     left: 2px;
     bottom: 2px;
@@ -213,7 +207,7 @@ header{
     -o-border-radius: 60px;
     border-radius: 60px;
 }
-.check-toggle-round + label:after {
+.label-toggle:after {
     top: 4px;
     left: 4px;
     bottom: 4px;
@@ -229,8 +223,8 @@ header{
     -o-transition: margin 0.2s;
     transition: margin 0.2s;
 }
-.check-toggle-round:checked + label:after {
-    margin-left: 40px;
+.label-toggle:after {
+    margin-left: var(--labelAfterMargin);
 }
 
 

@@ -45,10 +45,7 @@
             </nav>
 
             <div class="lang lang-navbar">
-                <input type="checkbox" id="lang-toggle" class="check-toggle check-toggle-round" checked onclick="switchLang()">
-                <label for="lang-toggle"></label>
-                <span class="on">En</span>
-                <span class="off">Es</span>
+                {{> lang}}
             </div>
 
             <a href="javascript:void(0);" class="burger-menu" onclick="burger_menu()"><i class="fas fa-bars"></i></a>
@@ -69,10 +66,7 @@
             </ul>
 
             <div class="lang">
-                <input type="checkbox" id="lang-toggle" class="check-toggle check-toggle-round" checked onclick="switchLang()">
-                <label for="lang-toggle"></label>
-                <span class="on">En</span>
-                <span class="off">Es</span>
+                {{> lang}}
             </div>
         </div>
     </header>
@@ -164,7 +158,7 @@
                     <input type="text" name="nombre" id="nombre" required placeholder="Full Name *" >
                     <input type="email" name="email" id="email" required placeholder="Email *">
                     <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
-                    <textarea name="mensaje" id="mensaje" required placeholder="message"></textarea>
+                    <textarea name="mensaje" id="mensaje" required placeholder="message"></textarea>w
                     <button class="enviar-button button" type="submit">Send</button>
                 </form>
             </div>
