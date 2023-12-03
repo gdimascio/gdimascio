@@ -153,24 +153,28 @@
 
         <!-- Seccion 4: Contacto -->
         <section class="section5-contacto" id="contacto">
-            <div class="form" id="_lang-en">
-                <form action="/enviar" method="post">
-                    <input type="text" name="nombre" id="nombre" required placeholder="Full Name *" >
-                    <input type="email" name="email" id="email" required placeholder="Email *">
-                    <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
-                    <textarea name="mensaje" id="mensaje" required placeholder="message"></textarea>w
-                    <button class="enviar-button button" type="submit">Send</button>
-                </form>
+            <div id="_lang-en">
+                <div class="form">
+                    <form action="/enviar" method="post">
+                        <input type="text" name="nombre" id="nombre" required placeholder="Full Name *" >
+                        <input type="email" name="email" id="email" required placeholder="Email *">
+                        <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
+                        <textarea name="mensaje" id="mensaje" required placeholder="Message"></textarea>
+                        <button class="enviar-button button" type="submit">Send</button>
+                    </form>
+                </div>
             </div>
 
-            <div class="form" id="_lang-es">
-                <form action="/enviar" method="post">
-                    <input type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido *" >
-                    <input type="email" name="email" id="email" required placeholder="Email *">
-                    <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
-                    <textarea name="mensaje" id="mensaje" required placeholder="Mensaje"></textarea>
-                    <button class="enviar-button button" type="submit">Enviar consulta</button>
-                </form>
+            <div id="_lang-es">
+                <div class="form">
+                    <form action="/enviar" method="post">
+                        <input type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido *" >
+                        <input type="email" name="email" id="email" required placeholder="Email *">
+                        <input type="tel" name="telefono" id="telefono" required placeholder="Cel *">
+                        <textarea name="mensaje" id="mensaje" required placeholder="Mensaje"></textarea>
+                        <button class="enviar-button button" type="submit">Enviar consulta</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

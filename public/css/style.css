@@ -355,6 +355,7 @@ header{
     top: 40%;
     border-radius: 10px;
     width: 70vw;
+    max-width: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
