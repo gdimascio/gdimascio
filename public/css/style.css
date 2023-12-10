@@ -260,10 +260,12 @@ header{
 }
 
 
+/*_______________________________________________________________*/
 .section-title-pdd{
     padding: 5vh 15px;
 }
 
+/*_______________________________________________________________*/
 .section2-about{
     background-color: #2C3862;
 }
@@ -288,7 +290,7 @@ header{
     padding-top: 20px;
 }
 
-
+/*_______________________________________________________________*/
 .section3-tecnologias{
     background-color: #22282C;
     min-height: 500px;
@@ -332,6 +334,7 @@ header{
     overflow: hidden;
 }
 
+/*_______________________________________________________________*/
 .section4-proyectos{
     background-color: #272C30;
     height: 300px;
@@ -344,6 +347,7 @@ header{
     color: #AEF1FF;
 }
 
+/*_______________________________________________________________*/
 .section5-contacto{
     background-color: #292C36;
     max-height: 739px;
@@ -399,7 +403,7 @@ textarea{
 }
 
 
-
+/*_______________________________________________________________*/
 footer{
     background-color: #282828;
     display: flex;
@@ -432,6 +436,7 @@ footer > div{
 
 
 
+/*_______________________________________________________________*/
 .whatsapp-button{
     display: inline-block;
     width: 50px;
@@ -449,14 +454,6 @@ footer > div{
 .scroll-to-top-button{
     display: none;
 }
-
-
-
-
-
-
-
-
 
 
 

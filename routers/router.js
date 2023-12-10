@@ -25,12 +25,16 @@ router.post("/enviar", async(req,res) => {
             // user: process.env.USERNAME,
             // pass: process.env.PASSWORD
 
+            // user: secrets.USER_TOKEN,
+            // pass: secrets.PASS_TOKEN
+
             user: process.env.USERNAME_LOCAL,
-            pass: process.env.PASSWORD_LOCAL,
+            pass: process.env.PASSWORD_LOCAL
         },
         tls: {
             rejectUnauthorized: false
         }
+
 
 
         //ETHEREAL EMAIL
