@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.get("/",(req,res) => {
-    res.render("index.hbs")
+    res.render("index")
 })
 
 router.post("/enviar", async(req,res) => {
