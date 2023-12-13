@@ -18,7 +18,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({extended: false}));
 
 
-app.use('/home', router)
+app.use('/', router)
 // app.get("/", (req, res) => {
 //     const htmlResponse = `
 //     <html>
