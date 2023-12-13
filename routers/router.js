@@ -28,9 +28,7 @@ router.post("/enviar", async(req,res) => {
             // user: process.env.USERNAME_LOCAL,
             // pass: process.env.PASSWORD_LOCAL
         },
-        tls: {
-            rejectUnauthorized: false
-        }
+        tls: {rejectUnauthorized: false}
 
 
 
@@ -47,6 +45,18 @@ router.post("/enviar", async(req,res) => {
 
     });
 
+    await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
 
     // Configurar correo electronico
     const mailOptions = {
@@ -61,14 +71,27 @@ router.post("/enviar", async(req,res) => {
         ${mensaje}`
     };
 
-    try{
+    await new Promise((resolve, reject) => {
         // Enviar correo
-        await transporter.sendMail(mailOptions);
-        res.render("index");
-    } catch(error){
-        console.log(error)
-        // res.render("index", {error: "Error al enviar mensaje."})
-    }
+        transporter.sendMail(mailOptions, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
+    
+    // try{
+    //     // Enviar correo
+    //     await transporter.sendMail(mailOptions);
+    //     res.render("index");
+    // } catch(error){
+    //     console.log(error)
+    //     // res.render("index", {error: "Error al enviar mensaje."})
+    // }
 })
 
 
