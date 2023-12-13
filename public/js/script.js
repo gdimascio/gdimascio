@@ -41,17 +41,33 @@ function showLang(lang){
     lang.forEach(lang => {
         lang.style.display = "block";
     })}
-
+function chkbxTgl(lblTgl, mrgn){
+    lblTgl.forEach(lblTgl => {
+        lblTgl.style.setProperty('--labelAfterMargin', mrgn)
+    })}
+function fontChk(onLang, offLang, colorOn, colorOff ){
+    onLang.forEach(onLang => {
+        onLang.style.color = colorOn;
+    })
+    offLang.forEach(offLang => {
+        offLang.style.color = colorOff;
+    })
+}
 function switchLang(){
     var langToggle = document.getElementById("lang-toggle");
     var langEn = document.querySelectorAll("#_lang-en");
     var langEs = document.querySelectorAll("#_lang-es");
+    var lblTgl = document.querySelectorAll(".label-toggle");
+    var onLang = document.querySelectorAll(".on");
+    var offLang = document.querySelectorAll(".off");
     if(langToggle.checked == true){
         showLang(langEn);
         hideLang(langEs);
+        chkbxTgl(lblTgl, '40px');
+        fontChk(onLang, offLang, "#AEF1FF", "#191919");
     }else{
         showLang(langEs);
         hideLang(langEn);
+        chkbxTgl(lblTgl, '0px');
+        fontChk(onLang, offLang, "#191919", "#AEF1FF");
         }}
-
-        

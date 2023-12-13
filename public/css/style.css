@@ -39,6 +39,7 @@ body{
 
 :root{
     --header-height: 50px;
+    --labelAfterMargin: 40px;
 }
 
 header{
@@ -100,7 +101,6 @@ header{
     top: 0;
     height: 100vh;
     width: 280px;
-    z-index: 1;
     transform: translateX(100%);
     transition-duration: 0.25s;
     display: flex;
@@ -143,7 +143,7 @@ header{
     position: absolute;
     bottom: 7%;
 }
-.lang > span{
+.on, .off{
     position: absolute;
     top: 10px;
     pointer-events: none;
@@ -159,7 +159,7 @@ header{
     visibility: hidden;
     position: absolute;
 }
-.check-toggle + label {
+.label-toggle {
     display: block;
     position: relative;
     cursor: pointer;
@@ -169,7 +169,7 @@ header{
     -ms-user-select: none;
     user-select: none;
 }
-.check-toggle-round + label {
+.label-toggle {
     padding: 2px;
     width: 97px;
     height: 35px;
@@ -180,28 +180,22 @@ header{
     -o-border-radius: 60px;
     border-radius: 60px;  
 }
-.check-toggle-round:checked ~ .off {
-    color: #191919;
-}
-.check-toggle-round:checked ~ .on {
-    color: #AEF1FF;
-}
-.lang > span.on {
+.on {
     left: 0;
     padding-left: 2px;
-    color: #191919;
-}
-.lang > span.off {
-    right: 0;
-    padding-right: 2px;
     color: #AEF1FF;
 }
-.check-toggle-round + label:before, .check-toggle-round + label:after {
+.off {
+    right: 0;
+    padding-right: 2px;
+    color: #191919;
+}
+.label-toggle:before, .label-toggle:after {
     display: block;
     position: absolute;
     content: "";
 }
-.check-toggle-round + label:before {
+.label-toggle:before {
     top: 2px;
     left: 2px;
     bottom: 2px;
@@ -213,7 +207,7 @@ header{
     -o-border-radius: 60px;
     border-radius: 60px;
 }
-.check-toggle-round + label:after {
+.label-toggle:after {
     top: 4px;
     left: 4px;
     bottom: 4px;
@@ -229,8 +223,8 @@ header{
     -o-transition: margin 0.2s;
     transition: margin 0.2s;
 }
-.check-toggle-round:checked + label:after {
-    margin-left: 40px;
+.label-toggle:after {
+    margin-left: var(--labelAfterMargin);
 }
 
 
@@ -266,10 +260,12 @@ header{
 }
 
 
+/*_______________________________________________________________*/
 .section-title-pdd{
     padding: 5vh 15px;
 }
 
+/*_______________________________________________________________*/
 .section2-about{
     background-color: #2C3862;
 }
@@ -278,6 +274,9 @@ header{
     gap: 20px;
 }
 .titulo > h2{
+    font-size: 24px;
+}
+.titulo > p{
     font-size: 24px;
 }
 .titulo-gd{
@@ -291,7 +290,7 @@ header{
     padding-top: 20px;
 }
 
-
+/*_______________________________________________________________*/
 .section3-tecnologias{
     background-color: #22282C;
     min-height: 500px;
@@ -335,6 +334,7 @@ header{
     overflow: hidden;
 }
 
+/*_______________________________________________________________*/
 .section4-proyectos{
     background-color: #272C30;
     height: 300px;
@@ -347,6 +347,7 @@ header{
     color: #AEF1FF;
 }
 
+/*_______________________________________________________________*/
 .section5-contacto{
     background-color: #292C36;
     max-height: 739px;
@@ -361,6 +362,7 @@ header{
     top: 40%;
     border-radius: 10px;
     width: 70vw;
+    max-width: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,7 +403,7 @@ textarea{
 }
 
 
-
+/*_______________________________________________________________*/
 footer{
     background-color: #282828;
     display: flex;
@@ -418,6 +420,7 @@ footer > div{
 .footer-izq > p{
     padding: 5px 0;
     color: #F2F5FF;
+    text-align:start;
 }
 .footer-der a{
     margin: 0 15px;
@@ -433,6 +436,7 @@ footer > div{
 
 
 
+/*_______________________________________________________________*/
 .whatsapp-button{
     display: inline-block;
     width: 50px;
@@ -457,22 +461,25 @@ footer > div{
 
 
 
-
-
-
-
-
-
-
-
 /*_______________________________________________________________*/
-@media (min-width:424px){
+@media (max-width:425px){
+    .titulo > h2{
+        font-size: 18px;
+    }
+    .section2-about > p{
+        font-size: 14px;
+    }
+        .tecnologias-lista{
+        width: 50%;
+    }
+}
+@media (min-width:425px){
     .header, .intro{
         margin: 0 15px;
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .scroll-to-top-button{
         display: none !important;
     }
@@ -480,7 +487,7 @@ footer > div{
 
 
 /*_______________________________________________________________*/
-@media (min-width:767px){
+@media (min-width:768px){
     .header, .intro, .sct-mg{
         margin: 0 30px;
     }
@@ -544,26 +551,19 @@ footer > div{
     }
 }
 
-/*_______________________________________________________________*/
-@media (min-width:960px){
-    .header{
-        max-width: 940px;
-        margin: 0 auto;
-    }
-}
 
 /*_______________________________________________________________*/
 @media (min-width:1240px){
     .header{
-        max-width: 1080px;
+        margin: 0 180px;
     }
     .br-dlt{
         display: none;
     }
-    .sct-mg{
+    /* .sct-mg{
         max-width: 1280px;
         margin: 0 auto;
-    }
+    } */
     .section-title-pdd{
         padding: 5vh 180px;
     }
@@ -595,9 +595,17 @@ footer > div{
 }
 
 /*_______________________________________________________________*/
+@media (min-width:1440px){
+    .header{
+        margin: 0 180px;
+    }
+}
+
+/*_______________________________________________________________*/
 @media (min-width:2445px){
     .header{
-        max-width: 1480px;
+        /* max-width: 1480px; */
+        margin: 0 540px;
     }
     .section-title-pdd{
         padding: 5vh 540px;
