@@ -22,14 +22,11 @@ router.post("/enviar", async(req,res) => {
         host: 'smtp.gmail.com',
         port: 587,
         auth: {
-            // user: process.env.USERNAME,
-            // pass: process.env.PASSWORD
+            user: process.env.USERNAME,
+            pass: process.env.PASSWORD
 
-            // user: secrets.USER_TOKEN,
-            // pass: secrets.PASS_TOKEN
-
-            user: process.env.USERNAME_LOCAL,
-            pass: process.env.PASSWORD_LOCAL
+            // user: process.env.USERNAME_LOCAL,
+            // pass: process.env.PASSWORD_LOCAL
         },
         tls: {
             rejectUnauthorized: false
