@@ -401,6 +401,9 @@ textarea{
     min-height: 40px;
     width: 100%;
 }
+.button:hover{
+    background-color: #C61950;
+}
 
 
 /*_______________________________________________________________*/
@@ -431,6 +434,9 @@ footer > div{
     font-size: 20px;
     color: #E7618B;
     font-weight: 800;
+}
+.cv-links > a:hover{
+    color: #C61950;
 }
 
 
