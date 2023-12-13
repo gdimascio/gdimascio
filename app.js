@@ -6,7 +6,6 @@ const router = require ('./routers/router')
 const hbs = require('hbs');
 
 const app = express();
-const port = process.env.PORT || 3001;
 
 // HBS
 app.set('view engine', 'hbs');
@@ -20,10 +19,10 @@ app.use(express.urlencoded({extended: false}));
 
 
 app.use('/', router)
-// app.use("/");
 
 
-app.get("*", function(req, res){res.send("ERROR 404")})
+const port = process.env.PORT || 3001;
+// app.get("*", function(req, res){res.send("ERROR 404")})
 app.listen(port , () => {
     console.log("usando el puerto http://localhost:" + port);
 })
