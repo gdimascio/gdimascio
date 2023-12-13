@@ -67,7 +67,7 @@ router.post("/enviar", async(req,res) => {
         res.render("index");
     } catch(error){
         console.log(error)
-        res.render("index", {error: "Error al enviar mensaje."})
+        // res.render("index", {error: "Error al enviar mensaje."})
     }
 })
 
