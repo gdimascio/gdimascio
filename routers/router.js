@@ -78,6 +78,7 @@ router.post("/enviar", async(req,res) => {
                 console.error(err);
                 reject(err);
             } else {
+                res.render("index");
                 console.log(info);
                 resolve(info);
             }
