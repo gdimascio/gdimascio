@@ -285,9 +285,14 @@ header{
 .titulo-main{
     color: #E7618B;
 }
-.section2-about > p{
+.about-txt{
     padding-left: 90px;
     padding-top: 20px;
+    max-width: 1080px;
+}
+.section2-about p{
+    word-spacing: 5px;
+    margin-bottom: 16px;
 }
 
 /*_______________________________________________________________*/

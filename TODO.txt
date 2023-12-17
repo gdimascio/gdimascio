@@ -1,4 +1,3 @@
 
 - ABOUT: completar lorem
 - cargar CV (en y es) en .env
-- arreglar envio de mail en vercel
