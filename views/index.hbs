@@ -65,58 +65,89 @@
 
         <!-- Seccion 2: About -->
         <section class="section2-about section-title-pdd" id="about">
-            <div class="titulo">
-                <h2 id="_lang-es" class="titulo-main">ACERCA DE</h2>
-                <h2 id="_lang-en" class="titulo-main">ABOUT</h2>
-                <h2 class="titulo-gd">GUIDO DI MASCIO</h2>
+            <div>
+                <div class="titulo">
+                    <h2 id="_lang-es" class="titulo-main">ACERCA DE</h2>
+                    <h2 id="_lang-en" class="titulo-main">ABOUT</h2>
+                    <h2 class="titulo-gd">GUIDO DI MASCIO</h2>
+                </div>
+                <div class="about-txt" id="_lang-es">{{> about_es}}</div>
+                <div class="about-txt" id="_lang-en">{{> about_en}}</div>
             </div>
-            <div class="about-txt" id="_lang-es">{{> about_es}}</div>
-            <div class="about-txt" id="_lang-en">{{> about_en}}</div>
         </section>
 
         <!-- Seccion 3: Tecnologias -->
         <section class="section3-tecnologias section-title-pdd" id="tecnologias">
-            <div class="titulo">
-                <h2 id="_lang-es" class="titulo-main">TECNOLOGÍAS</h2>
-                <h2 id="_lang-en" class="titulo-main">TECHNOLOGIES</h2>
-            </div>
-
-            <div class="tec-window">
-                <div class="tecnologias-lista">
-                    <ul class="ul">
-                        {{> tecnologias}}
-                    </ul>
+            <div>
+                <div class="titulo">
+                    <h2 id="_lang-es" class="titulo-main">TECNOLOGÍAS</h2>
+                    <h2 id="_lang-en" class="titulo-main">TECHNOLOGIES</h2>
                 </div>
-                <img src="img/Tecnologias/HTML5.png" id="__img">
-                <img src="img/Tecnologias/CSS.png" id="__img">
-                <img src="img/Tecnologias/Javascript.png" id="__img">
-                <img src="img/Tecnologias/Node.png" id="__img">
-                <img src="img/Tecnologias/Github.png" id="__img">
-                <img src="img/Tecnologias/React.png" id="__img">
-                <img src="img/Tecnologias/SQL.png" id="__img">
-                <img src="img/Tecnologias/Firebase.png" id="__img">
-                <img src="img/Tecnologias/Figma.png" id="__img">
-                <img src="img/Tecnologias/Mongodb.png" id="__img">
-                <img src="img/Tecnologias/Bootstrap.png" id="__img">
-                <img src="img/Tecnologias/Express.png" id="__img">
 
-                <script>
-                    var imgs = document.querySelectorAll("#__img");
-                    driftImage();
-                    setInterval(driftImage, 4000);
-                </script>
+                <div class="tec-window">
+                    <div class="tecnologias-lista">
+                        <ul class="ul">
+                            {{> tecnologias}}
+                        </ul>
+                    </div>
+                    <img src="img/Tecnologias/HTML5.png" id="__img">
+                    <img src="img/Tecnologias/CSS.png" id="__img">
+                    <img src="img/Tecnologias/Javascript.png" id="__img">
+                    <img src="img/Tecnologias/Node.png" id="__img">
+                    <img src="img/Tecnologias/Github.png" id="__img">
+                    <img src="img/Tecnologias/React.png" id="__img">
+                    <img src="img/Tecnologias/SQL.png" id="__img">
+                    <img src="img/Tecnologias/Firebase.png" id="__img">
+                    <img src="img/Tecnologias/Figma.png" id="__img">
+                    <img src="img/Tecnologias/Mongodb.png" id="__img">
+                    <img src="img/Tecnologias/Bootstrap.png" id="__img">
+                    <img src="img/Tecnologias/Express.png" id="__img">
+
+                    <script>
+                        var imgs = document.querySelectorAll("#__img");
+                        driftImage();
+                        setInterval(driftImage, 4000);
+                    </script>
+                </div>
             </div>
-
         </section>
 
         <!-- Seccion 4: Proyectos -->
         <section class="section4-proyectos section-title-pdd" id="proyectos">
-            <div class="titulo">
-                <h2 id="_lang-en" class="titulo-main">PROJECTS</h2>
-                <h2 id="_lang-es" class="titulo-main">PROYECTOS</h2>
+            <div>
+                <div class="titulo">
+                    <h2 id="_lang-en" class="titulo-main">PROJECTS</h2>
+                    <h2 id="_lang-es" class="titulo-main">PROYECTOS</h2>
+                </div>
+                <div class="proyectos">
+                        <a class="website" href="https://tiksys.vercel.app/">
+                            <img src="/img/Proyectos/TikSys.png" alt="TIKSYS">
+                            {{!-- <p id="_lang-en" >VISIT <i class="fa-solid fa-arrow-right"></i></p>
+                            <p id="_lang-es" >VISITAR <i class="fa-solid fa-arrow-right"></i></p> --}}
+                        </a>
+                        <a class="website" href="https://mdimascio.netlify.app/">
+                            <img src="/img/Proyectos/MD.jpg" alt="MD">
+                        </a>
+                        <a class="website" href="https://gdimascio.netlify.app">
+                            <img src="/img/Proyectos/Webdev.png" alt="WEBDEV">
+                        </a>
+                        <a class="website" href="https://lp-template.netlify.app/">
+                            <img src="/img/Proyectos/LPtemplate.png" alt="LP-TEMPLATE">
+                        </a>
+                        <a class="website" href="https://ripplefx.vercel.app/">
+                            <img src="/img/Proyectos/Ripple.png" alt="RIPPLE">
+                        </a>
+                        <a class="website" href="https://clickmebutton.vercel.app/">
+                            <img src="/img/Proyectos/Clickme.png" alt="CLICKME">
+                        </a>
+                        <a class="website" href="https://domo-compleetlab.netlify.app/">
+                            <img src="/img/Proyectos/Domo.png" alt="DOMO">
+                        </a>
+
+
+
+                </div>
             </div>
-            <p id="_lang-es">PRÓXIMAMENTE</p>
-            <p id="_lang-en">COMING SOON</p>
         </section>
 
         <!-- Seccion 4: Contacto -->

@@ -40,6 +40,7 @@ body{
 :root{
     --header-height: 50px;
     --labelAfterMargin: 40px;
+    --webWidth: 300px
 }
 
 header{
@@ -229,6 +230,16 @@ header{
 
 
 /*_______________________________________________________________*/
+section > div {
+    /* max-width: 1140px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section > div > div {
+    width: 50vw;
+    max-width: 1140px;
+}
 .section1-intro{
     text-align: center;
     background-color: #2F323D;
@@ -342,15 +353,63 @@ header{
 /*_______________________________________________________________*/
 .section4-proyectos{
     background-color: #272C30;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.section4-proyectos > P{
-    text-align: center;
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 30px;
+}
+.proyectos img {
+    width: var(--webWidth);
+    height: 185px;
+    border-radius: 2px;
+}
+.website{
     position: relative;
-    top: 50%;
-    font-size: 24px;
-    color: #AEF1FF;
+    display: flex;
+    align-items: center;
 }
+/*
+.website p{
+    position: absolute;
+    text-align: center;
+    width: var(--webWidth);
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+.website a p{
+    display: none;
+    animation-name: p-fade;
+    animation-duration: .5s;
+}
+.website:hover p{
+    display: inline-block;
+}
+.website:hover img{
+    opacity: 50%;
+    animation-name: img-fade;
+    animation-duration: .5s;
+}
+@keyframes img-fade {
+    from {opacity: 100%} 
+    to {opacity: 60%}
+}
+@keyframes p-fade {
+    from {opacity: 0} 
+    to {opacity: 100%}
+} 
+*/
+.website:hover {
+    border: 1px solid #E7618B;
+}
+
+
 
 /*_______________________________________________________________*/
 .section5-contacto{
@@ -564,6 +623,14 @@ footer > div{
 
 
 /*_______________________________________________________________*/
+@media (max-width:1240px){
+    section > div > div {
+        width: 90vw;
+    }    
+}
+
+
+/*_______________________________________________________________*/
 @media (min-width:1240px){
     .header{
         margin: 0 180px;
@@ -571,10 +638,6 @@ footer > div{
     .br-dlt{
         display: none;
     }
-    /* .sct-mg{
-        max-width: 1280px;
-        margin: 0 auto;
-    } */
     .section-title-pdd{
         padding: 5vh 180px;
     }
