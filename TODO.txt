@@ -1,8 +1,6 @@
 
 * cargar CV (en y es) en .env
 * ASTERISCO tecnologias
-* Dar estilo a .website p y cambiar imagenes
 
 
 COMMIT:
-se agrega portfolio en seccion projects con paginas realizadas
