@@ -17,31 +17,31 @@ router.post("/enviar", async(req,res) => {
         return res.render("index", {error: "Todos los campos son obligatorios"});
     }
 
+    // Revisa si se esta accediendo por host o de forma local
+    let username;
+    let password;
+    try {
+        if (!process.env.USERNAME || !process.env.PASSWORD) {
+            throw new Error("No se encontraron variables en .env");
+        }
+        username = process.env.USERNAME;
+        password = process.env.PASSWORD
+    } catch (error) {
+        console.log("No se encontraron variables en.env");
+        console.log("Usando variables locales");
+        username = process.env.USERNAME_LOCAL;
+        password = process.env.PASSWORD_LOCAL
+    }
+
     // Configurar transportador SMTP
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 587,
         auth: {
-            user: process.env.USERNAME,
-            pass: process.env.PASSWORD
-
-            // user: process.env.USERNAME_LOCAL,
-            // pass: process.env.PASSWORD_LOCAL
+            user: username,
+            pass: password
         },
         tls: {rejectUnauthorized: false}
-
-
-
-        //ETHEREAL EMAIL
-        // host: 'smtp.ethereal.email',
-        // port: 587,
-        // auth: {
-        //     user: 'angela.bauch14@ethereal.email',
-        //     pass: 'r8e9zdEkQtN1akz4hy'
-        //     },
-        // tls: {
-        //     rejectUnauthorized: false
-        // }
 
     });
 
@@ -78,21 +78,17 @@ router.post("/enviar", async(req,res) => {
                 console.error(err);
                 reject(err);
             } else {
-                res.render("index");
-                console.log(info);
+                res.send(`
+                    <script>
+                        alert("Email Sent Successfully.")
+                        window.location.href = "/";
+                    </script>
+                    `);
+                res.redirect("/");
                 resolve(info);
             }
         });
     });
-    
-    // try{
-    //     // Enviar correo
-    //     await transporter.sendMail(mailOptions);
-    //     res.render("index");
-    // } catch(error){
-    //     console.log(error)
-    //     // res.render("index", {error: "Error al enviar mensaje."})
-    // }
 })
 
 
