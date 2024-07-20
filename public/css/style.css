@@ -373,38 +373,8 @@ section > div > div {
     position: relative;
     display: flex;
     align-items: center;
+    border: 1px solid #e7618b00;
 }
-/*
-.website p{
-    position: absolute;
-    text-align: center;
-    width: var(--webWidth);
-    font-size: 22px;
-    font-weight: 600;
-    color: white;
-}
-.website a p{
-    display: none;
-    animation-name: p-fade;
-    animation-duration: .5s;
-}
-.website:hover p{
-    display: inline-block;
-}
-.website:hover img{
-    opacity: 50%;
-    animation-name: img-fade;
-    animation-duration: .5s;
-}
-@keyframes img-fade {
-    from {opacity: 100%} 
-    to {opacity: 60%}
-}
-@keyframes p-fade {
-    from {opacity: 0} 
-    to {opacity: 100%}
-} 
-*/
 .website:hover {
     border: 1px solid #E7618B;
 }
