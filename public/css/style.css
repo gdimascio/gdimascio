@@ -294,7 +294,8 @@ section > div > div {
     color: #AEF1FF;
 }
 .titulo-main{
-    color: #E7618B;
+    /* color: #E7618B; */
+    color: #AEF1FF;
 }
 .about-txt{
     padding-left: 90px;
