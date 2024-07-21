@@ -255,8 +255,7 @@ section > div > div {
 }
 .intro > h2{
     font-size: 48px;
-    color: #E7618B;
-    /* color: #AEF1FF; */
+    color: #AEF1FF;
     font-weight: 600;
     letter-spacing: 10px;
 }
@@ -370,15 +369,14 @@ section > div > div {
     height: 185px;
     border-radius: 2px;
 }
-.websites{
+.website{
     position: relative;
     display: flex;
     align-items: center;
     border: 1px solid #e7618b00;
 }
-.websites:hover {
-    /* border: 1px solid #E7618B; */
-    border: 1px solid #AEF1FF;
+.website:hover {
+    border: 1px solid #E7618B;
 }
 
 
