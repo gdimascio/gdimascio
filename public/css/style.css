@@ -376,6 +376,7 @@ section > div > div {
     border: 1px solid #e7618b00;
 }
 .website:hover {
+    /* border: 1px solid #E7618B; */
     border: 1px solid #AEF1FF;
 }
 
