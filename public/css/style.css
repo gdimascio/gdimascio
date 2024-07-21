@@ -255,7 +255,8 @@ section > div > div {
 }
 .intro > h2{
     font-size: 48px;
-    color: #AEF1FF;
+    color: #E7618B;
+    /* color: #AEF1FF; */
     font-weight: 600;
     letter-spacing: 10px;
 }
@@ -294,8 +295,7 @@ section > div > div {
     color: #AEF1FF;
 }
 .titulo-main{
-    /* color: #E7618B; */
-    color: #AEF1FF;
+    color: #E7618B;
 }
 .about-txt{
     padding-left: 90px;
