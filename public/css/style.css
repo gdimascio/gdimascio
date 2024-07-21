@@ -369,13 +369,13 @@ section > div > div {
     height: 185px;
     border-radius: 2px;
 }
-.website{
+.websites{
     position: relative;
     display: flex;
     align-items: center;
     border: 1px solid #e7618b00;
 }
-.website:hover {
+.websites:hover {
     /* border: 1px solid #E7618B; */
     border: 1px solid #AEF1FF;
 }
