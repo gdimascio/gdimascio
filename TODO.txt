@@ -1,8 +1,7 @@
 
 * cargar CV (en y es) en .env
 * ASTERISCO tecnologias
-
-* proyectos/img en deploy
+* retocar Portfolio
 
 
 COMMIT:

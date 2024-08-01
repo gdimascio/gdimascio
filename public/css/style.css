@@ -40,7 +40,7 @@ body{
 :root{
     --header-height: 50px;
     --labelAfterMargin: 40px;
-    --webWidth: 300px
+    --webWidth: 400px
 }
 
 header{
@@ -366,19 +366,87 @@ section > div > div {
 }
 .proyectos img {
     width: var(--webWidth);
-    height: 185px;
-    border-radius: 2px;
+    height: 230px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 .website{
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    width: var(--webWidth);
     border: 1px solid #e7618b00;
+    border-radius: 10px;
 }
 .website:hover {
     border: 1px solid #E7618B;
 }
-
+.website > a{
+    height: 230px;
+}
+.info{
+    background-color: #CCC;
+    padding: 16px;
+    border-radius: 0 0 10px 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: var(--webWidth);
+}
+.proy-name{
+    font-size: 24px;
+}
+.lenguajes{
+    display: flex;
+    gap: 16px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 16px;
+    cursor: pointer;
+}
+.lenguajes *{
+    border-radius: 5px;
+    background-color: #000;
+    color: #CCC;
+    padding: 3px;
+    font-weight: 600;
+}
+.info span{
+    border-bottom: 1px solid #000;
+}
+.descripcion{
+    font-size: 16px;
+}
+.repo{
+    color: #000000;
+    font-size: 24px;
+    position: absolute;
+    right: 16px;
+}
+/* LENGUAJES */
+.node{
+    background-color: #41873F;
+}
+.express{
+    background-color: #393939;
+}
+.firebase{
+    background-color: #F57F17;
+}
+.html{
+    background-color: #E44D26;
+}
+.css{
+    background-color: #264DE4;
+}
+.js{
+    background-color: #BD9E06;
+}
+.jquery{
+    background-color: #0F77B6;
+}
 
 
 
