@@ -40,7 +40,8 @@ body{
 :root{
     --header-height: 50px;
     --labelAfterMargin: 40px;
-    --webWidth: 400px
+    --webWidth: 350px;
+    --webWidthM: 90vw;
 }
 
 header{
@@ -365,7 +366,6 @@ section > div > div {
     margin-top: 30px;
 }
 .proyectos img {
-    width: var(--webWidth);
     height: 230px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -375,7 +375,6 @@ section > div > div {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: var(--webWidth);
     border: 1px solid #e7618b00;
     border-radius: 10px;
 }
@@ -393,6 +392,8 @@ section > div > div {
     display: flex;
     flex-direction: column;
     height: 200px;
+}
+.websiteWidth{
     width: var(--webWidth);
 }
 .proy-name{
@@ -580,6 +581,9 @@ footer > div{
     }
         .tecnologias-lista{
         width: 50%;
+    }
+    .websiteWidth{
+        width: var(--webWidthM);
     }
 }
 @media (min-width:425px){
