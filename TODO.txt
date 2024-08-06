@@ -1,7 +1,6 @@
 
 * cargar CV (en y es) en .env
-* ASTERISCO tecnologias
-* retocar Portfolio
-
+* retocar estructura general de la pagina: la pagin esta teniendo una estructura muy vertical. Trata de darle un poco de formato para jugar mas con la dinamica del scrolleo. Toma como referencia otras paginas y landing pages que hayas hecho.
+* revisar el ancho de GUIDO DI MASCIO en INTRO 
 
 COMMIT:

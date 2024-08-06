@@ -70,4 +70,27 @@ function switchLang(){
         hideLang(langEn);
         chkbxTgl(lblTgl, '0px');
         fontChk(onLang, offLang, "#191919", "#AEF1FF");
-        }}
+    }
+}
+
+// INTRO TIPING ANIMATION
+function typeGD() {
+    let intervalGD = setInterval(() => {
+        if(countGD == gd.length) {
+            clearInterval(intervalGD);
+        } else {
+            heading.textContent  += gd[countGD];
+            countGD++;
+        }
+    }, 200);
+}
+function typeWD() {
+    let intervalWD = setInterval(() => {
+        if(countWD == wd.length) {
+            clearInterval(intervalWD);
+        } else {
+            headingWD.textContent  += wd[countWD];
+            countWD++;
+        }
+    }, 200);
+}

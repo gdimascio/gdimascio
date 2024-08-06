@@ -238,7 +238,7 @@ section > div {
     align-items: center;
 }
 section > div > div {
-    width: 50vw;
+    /* width: 50vw; */
     max-width: 1140px;
 }
 .section1-intro{
@@ -255,22 +255,71 @@ section > div > div {
     transform: translateY(-25%);
 }
 .intro > h2{
+    height: 55px;
     font-size: 48px;
     color: #AEF1FF;
     font-weight: 600;
     letter-spacing: 10px;
+    animation-name: GD-anim;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 3s;
 }
 .intro > img{
     max-width: 25vw;
     margin: 10vh 0;
 }
+.intro > div{
+    max-width: 25vw;
+    margin: 10vh 0;
+    font-size: 72px;
+    font-weight: 800;
+    color: #E7618B;
+    display: flex;
+    justify-content: center;
+
+}
 .intro > h3{
+    height: 27px;
     font-size: 24px;
     color: #FFD79C;
     font-weight: 400;
     letter-spacing: 5px;
 }
 
+.dash{
+    animation-name: dash-anim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes dash-anim {
+    0% {opacity: 1;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes GD-anim_{
+    0% {opacity: 1;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 1;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 1;}
+}
 
 /*_______________________________________________________________*/
 .section-title-pdd{
@@ -303,6 +352,7 @@ section > div > div {
     max-width: 1080px;
 }
 .section2-about p{
+    color: #ccc;
     word-spacing: 5px;
     margin-bottom: 16px;
 }

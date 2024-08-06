@@ -9,7 +9,7 @@
         <div class="header sct-mg">
             <div class="logo" style="width: 200px;">
                 <a href="#"><img src="img/logo.png" alt="LOGO" class="logo"></a>
-                <p>Guido Di Mascio</p>
+                {{!-- <p>Guido Di Mascio</p> --}}
             </div>
 
             <nav class="navbar">
@@ -57,9 +57,26 @@
         <!-- Seccion 1: Intro -->
         <section class="section1-intro" id="home">
             <div class="intro sct-mg">
-                <h2>GUIDO <br class="br-dlt"> DI MASCIO</h1>
-                <img src="img/logo2.PNG" alt="">
-                <h3>Web Developer</h3>
+                <h2 id="intro_GD"></h2>
+                {{!-- <h2 id="intro_GD">GUIDO <br class="br-dlt">DI MASCIO</h1> --}}
+                <script>
+                    const gd = "GUIDO DI MASCIO";
+                    const heading = document.getElementById("intro_GD");
+                    let countGD = 0;
+
+                    setTimeout(typeGD, 4000);
+                </script>
+
+                <div>&lt;<p class="dash">/</p>&gt;</div>
+
+                <h3 id="intro_WD"></h3>
+                <script>
+                    const wd = "Web Developer";
+                    const headingWD = document.getElementById("intro_WD");
+                    let countWD = 0;
+
+                    setTimeout(typeWD, 8000);
+                </script>
             </div>
         </section>
 
@@ -85,11 +102,13 @@
                 </div>
 
                 <div class="tec-window">
+{{!-- 
                     <div class="tecnologias-lista">
                         <ul class="ul">
                             {{> tecnologias}}
                         </ul>
-                    </div>
+                    </div> 
+--}}
                     <img src="img/Tecnologias/HTML5.png" id="__img">
                     <img src="img/Tecnologias/CSS.png" id="__img">
                     <img src="img/Tecnologias/Javascript.png" id="__img">
@@ -290,7 +309,6 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-izq">
-            <p>GUIDO DI MASCIO</p>
             <p>+54 9 (11) 5577 3362</p>
             <p>guido.dimascio@gmail.com</p>
         </div>
