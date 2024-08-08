@@ -1,5 +1,5 @@
 
-// Scroll to top function
+// Scroll-to-top function
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "inline-block";
@@ -81,6 +81,16 @@ function typeGD() {
         } else {
             heading.textContent  += gd[countGD];
             countGD++;
+        }
+    }, 200);
+}
+function typeGD2() {
+    let intervalGD2 = setInterval(() => {
+        if(countGD2 == gd2.length) {
+            clearInterval(intervalGD2);
+        } else {
+            heading2.textContent  += gd2[countGD2];
+            countGD2++;
         }
     }, 200);
 }

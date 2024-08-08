@@ -254,7 +254,13 @@ section > div > div {
     top: 40%;
     transform: translateY(-25%);
 }
-.intro > h2{
+.introGD-div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.introGD-div h2{
     height: 55px;
     font-size: 48px;
     color: #AEF1FF;
@@ -270,7 +276,7 @@ section > div > div {
     max-width: 25vw;
     margin: 10vh 0;
 }
-.intro > div{
+.simbolo{
     max-width: 25vw;
     margin: 10vh 0;
     font-size: 72px;
@@ -491,6 +497,9 @@ section > div > div {
 }
 .css{
     background-color: #264DE4;
+}
+.react{
+    background-color: #149ECA;
 }
 .js{
     background-color: #BD9E06;
@@ -730,6 +739,9 @@ footer > div{
     }
     .br-dlt{
         display: none;
+    }
+    .introGD-div{
+        flex-direction: row;
     }
     .section-title-pdd{
         padding: 5vh 180px;

@@ -57,20 +57,29 @@
         <!-- Seccion 1: Intro -->
         <section class="section1-intro" id="home">
             <div class="intro sct-mg">
-                <h2 id="intro_GD"></h2>
-                {{!-- <h2 id="intro_GD">GUIDO <br class="br-dlt">DI MASCIO</h1> --}}
+                <div class="introGD-div">
+                    <h2 id="intro_GD"></h2>
+                    <h2 id="intro_GD2"></h2>
+                </div>
                 <script>
-                    const gd = "GUIDO DI MASCIO";
+                    // typeGD: tipea GUIDO
+                    const gd = "GUIDO";
                     const heading = document.getElementById("intro_GD");
                     let countGD = 0;
-
                     setTimeout(typeGD, 4000);
+
+                    // typeGD2: tipea DI MASCIO
+                    const gd2 = "DI MASCIO";
+                    const heading2 = document.getElementById("intro_GD2");
+                    let countGD2 = 0;
+                    setTimeout(typeGD2, 5000);
                 </script>
 
-                <div>&lt;<p class="dash">/</p>&gt;</div>
+                <div class="simbolo">&lt;<p class="dash">/</p>&gt;</div>     {{!--  </> --}}
 
                 <h3 id="intro_WD"></h3>
                 <script>
+                    // countWD: tipea Web Developer
                     const wd = "Web Developer";
                     const headingWD = document.getElementById("intro_WD");
                     let countWD = 0;
@@ -102,13 +111,6 @@
                 </div>
 
                 <div class="tec-window">
-{{!-- 
-                    <div class="tecnologias-lista">
-                        <ul class="ul">
-                            {{> tecnologias}}
-                        </ul>
-                    </div> 
---}}
                     <img src="img/Tecnologias/HTML5.png" id="__img">
                     <img src="img/Tecnologias/CSS.png" id="__img">
                     <img src="img/Tecnologias/Javascript.png" id="__img">
@@ -190,18 +192,17 @@
                     </div>
 
                     <div class="website websiteWidth">
-                        <a href="https://lp-template.netlify.app/" target="_blank">
-                            <img class="websiteWidth" src="/img/Proyectos/LPtemplate.PNG" alt="LP-TEMPLATE">
+                        <a href="https://lp-template-react.vercel.app/" target="_blank">
+                            <img class="websiteWidth" src="/img/Proyectos/LPtemplate.PNG" alt="LP-TEMPLATE-REACT">
                         </a>
                         <div class="info websiteWidth">
                             <h3 class="proy-name">Proyecto LP-template</h3>
                             <span></span>
                             <p class="descripcion">Plantilla de landing page</p>
                             <div class="lenguajes">
-                                <p class="html">HTML</p>
-                                <p class="css">CSS</p>
+                                <p class="react">REACT</p>
                             </div>
-                            <a class="repo" href="https://github.com/gdimascio/LP-template" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a class="repo" href="https://github.com/gdimascio/lp-template-react" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
 
@@ -232,6 +233,21 @@
                                 <p class="js">JAVASCRIPT</p>
                             </div>
                             <a class="repo" href="https://github.com/gdimascio/Proyecto-ClickMe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="website websiteWidth">
+                        <a href="https://proyecto-fly.vercel.app/" target="_blank">
+                            <img class="websiteWidth" src="/img/Proyectos/night-sky.jpg" alt="FLY">
+                        </a>
+                        <div class="info websiteWidth">
+                            <h3 class="proy-name">Proyecto Fly</h3>
+                            <span></span>
+                            <p class="descripcion">Prueba técnica para desplazamiento de elementos dinámicos dentro de un contenedor</p>
+                            <div class="lenguajes">
+                                <p class="js">JAVASCRIPT</p>
+                            </div>
+                            <a class="repo" href="https://github.com/gdimascio/Proyecto-Fly" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
 
