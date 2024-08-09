@@ -237,14 +237,14 @@ section > div {
     flex-direction: column;
     align-items: center;
 }
-section > div > div {
-    /* width: 50vw; */
+.titulo {
+    width: 50vw;
     max-width: 1140px;
 }
 .section1-intro{
     text-align: center;
     background-color: #2F323D;
-    height: calc(100vh - var(--header-height));
+    height: calc(100svh - var(--header-height));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -366,22 +366,40 @@ section > div > div {
 /*_______________________________________________________________*/
 .section3-tecnologias{
     background-color: #22282C;
-    min-height: 500px;
+    /* min-height: 500px; */
     position: relative;
     overflow: hidden;
 
 }
 .tec-window{
-    min-height: 500px;
     /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    width: 50vw;
 }
 .tec-window > img{
     max-width: 60px;
     max-height: 60px;
     position: absolute;
-    transition-duration: 4s;
-    /* top: 500px; */
-    /* left: 80vw; */
+    left: 100%;
+    animation: scroll 12s linear infinite;
+}
+.tec-window > :nth-child(1){animation-delay: 0s}
+.tec-window > :nth-child(2){animation-delay: 1s}
+.tec-window > :nth-child(3){animation-delay: 2s}
+.tec-window > :nth-child(4){animation-delay: 3s}
+.tec-window > :nth-child(5){animation-delay: 4s}
+.tec-window > :nth-child(6){animation-delay: 5s}
+.tec-window > :nth-child(7){animation-delay: 6s}
+.tec-window > :nth-child(8){animation-delay: 7s}
+.tec-window > :nth-child(9){animation-delay: 8s}
+.tec-window > :nth-child(10){animation-delay: 9s}
+.tec-window > :nth-child(11){animation-delay: 10s}
+.tec-window > :nth-child(12){animation-delay: 11s}
+
+@keyframes scroll{
+    0%{left: 100%;}
+    100%{left: -20%;}
 }
 .tecnologias-lista{
     position: absolute;
