@@ -361,6 +361,7 @@ section > div {
     color: #ccc;
     word-spacing: 5px;
     margin-bottom: 16px;
+    font-size: 18px;
 }
 
 /*_______________________________________________________________*/
@@ -788,6 +789,9 @@ footer > div{
         position: fixed;
         top: 7px;
         right: 7px;
+    }
+    .section2-about p {
+        font-size: 20px;
     }
 }
 
