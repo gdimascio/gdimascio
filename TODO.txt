@@ -1,8 +1,5 @@
 
 * cargar CV (en y es) en .env
-* retocar estructura general de la pagina: la pagin esta teniendo una estructura muy vertical. Trata de darle un poco de formato para jugar mas con la dinamica del scrolleo. Toma como referencia otras paginas y landing pages que hayas hecho.
-* agregar raya de tecleado a GUIDO DI MASCIO en INTRO
-* .simbolo: iterar (con delay mientras se tipea)
-* corregir margen y espacios en TECNOLOGIAS
 
 COMMIT:
+

@@ -238,7 +238,7 @@ section > div {
     align-items: center;
 }
 .titulo {
-    width: 50vw;
+    width: 80vw;
     max-width: 1140px;
 }
 .section1-intro{
@@ -258,19 +258,47 @@ section > div {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
 
 }
 .introGD-div h2{
-    height: 55px;
+    /* height: 55px; */
     font-size: 48px;
     color: #AEF1FF;
     font-weight: 600;
     letter-spacing: 10px;
-    animation-name: GD-anim;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-delay: 3s;
+
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.introG{
+    border-right: solid 3px transparent;
+    animation: 
+    G-anim 1s steps(5) 3s forwards,
+    blink 1s steps(1) 2.5s infinite,
+    noBlink 0s 4s forwards;
+}
+@keyframes G-anim{
+    to { width: 194px;}
+}
+@keyframes blink{
+    from { border-color: transparent;}
+    50% { border-color: #E7618B;}
+    to { border-color: transparent;}
+}
+@keyframes noBlink{
+    to { border-color: transparent;}
+}
+.introDM{
+    border-right: solid 3px transparent;
+    animation: 
+    DM-anim 1.8s steps(9) 4s forwards,
+    blink 1s steps(1) 3.5s infinite,
+    noBlink 0s 7.5s forwards;
+}
+@keyframes DM-anim{
+    to { width: 349px;}
 }
 .intro > img{
     max-width: 25vw;
@@ -284,52 +312,44 @@ section > div {
     color: #E7618B;
     display: flex;
     justify-content: center;
-
 }
-.intro > h3{
+.introWD{
     height: 27px;
     font-size: 24px;
     color: #FFD79C;
     font-weight: 400;
     letter-spacing: 5px;
-}
 
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: solid 3px transparent;
+    animation: 
+    WDanim 2.5s steps(13) 8s forwards,
+    blink 1s steps(1) 7s infinite,
+    noBlink 0s 13s forwards;
+}
+@keyframes WDanim {
+    to { width: 252px;}
+}
 .dash{
-    animation-name: dash-anim;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: 
+    dash-anim 3s linear forwards,
+    dash-anim 3s linear 13s infinite;
 }
 @keyframes dash-anim {
     0% {opacity: 1;}
-    10% {opacity: 1;}
-    20% {opacity: 0;}
-    30% {opacity: 0;}
-    40% {opacity: 1;}
-    50% {opacity: 1;}
-    60% {opacity: 0;}
-    70% {opacity: 0;}
-    80% {opacity: 1;}
-    90% {opacity: 1;}
-    100% {opacity: 1;}
-}
-@keyframes GD-anim_{
-    0% {opacity: 1;}
-    10% {opacity: 1;}
-    20% {opacity: 0;}
-    30% {opacity: 0;}
-    40% {opacity: 1;}
-    50% {opacity: 1;}
-    60% {opacity: 0;}
-    70% {opacity: 0;}
-    80% {opacity: 1;}
-    90% {opacity: 1;}
+    16.66% {opacity: 0;}
+    33.33% {opacity: 1;}
+    50% {opacity: 0;}
+    66.66% {opacity: 1;}
+    83.33%{opacity: 0;}
     100% {opacity: 1;}
 }
 
 /*_______________________________________________________________*/
 .section-title-pdd{
-    padding: 5vh 15px;
+    padding: 50px 15px;
 }
 
 /*_______________________________________________________________*/
@@ -353,7 +373,7 @@ section > div {
     color: #E7618B;
 }
 .about-txt{
-    padding-left: 90px;
+    /* padding-left: 90px; */
     padding-top: 20px;
     max-width: 1080px;
 }
@@ -367,7 +387,7 @@ section > div {
 /*_______________________________________________________________*/
 .section3-tecnologias{
     background-color: #22282C;
-    /* min-height: 500px; */
+    min-height: 100px;
     position: relative;
     overflow: hidden;
 
@@ -400,7 +420,7 @@ section > div {
 
 @keyframes scroll{
     0%{left: 100%;}
-    100%{left: -20%;}
+    50%, 100%{left: -20%;}
 }
 .tecnologias-lista{
     position: absolute;
@@ -683,7 +703,7 @@ footer > div{
         margin: 0 30px;
     }
     .section-title-pdd{
-        padding: 5vh 30px;
+        padding: 50px 30px;
     }
     footer > div{
         margin-left: 30px;
@@ -740,8 +760,15 @@ footer > div{
         10.71429% { transform:translate(0,0) }
         100% { transform:translate(0,0) }
     }
+    @keyframes scroll{
+        0%{left: 100%;}
+        70%, 100%{left: -20%;}
+    }
+    .about-txt{
+    padding-left: 90px;
+    padding-right: 90px;
+    }
 }
-
 
 /*_______________________________________________________________*/
 @media (max-width:1240px){
@@ -763,7 +790,7 @@ footer > div{
         flex-direction: row;
     }
     .section-title-pdd{
-        padding: 5vh 180px;
+        padding: 50px 180px;
     }
     footer > div{
         margin-left: 180px;
@@ -809,7 +836,7 @@ footer > div{
         margin: 0 540px;
     }
     .section-title-pdd{
-        padding: 5vh 540px;
+        padding: 50px 540px;
     }
     .form{
         max-width: 1160px;
@@ -818,5 +845,9 @@ footer > div{
     footer > div{
         margin-left: 540px;
         margin-right: 540px;
+    }
+    @keyframes scroll{
+        0%{left: 100%;}
+        100%{left: -20%;}
     }
 }

@@ -74,26 +74,26 @@ function switchLang(){
 }
 
 // INTRO TIPING ANIMATION
-function typeGD() {
-    let intervalGD = setInterval(() => {
-        if(countGD == gd.length) {
-            clearInterval(intervalGD);
-        } else {
-            heading.textContent  += gd[countGD];
-            countGD++;
-        }
-    }, 200);
-}
-function typeGD2() {
-    let intervalGD2 = setInterval(() => {
-        if(countGD2 == gd2.length) {
-            clearInterval(intervalGD2);
-        } else {
-            heading2.textContent  += gd2[countGD2];
-            countGD2++;
-        }
-    }, 200);
-}
+// function typeGD() {
+//     let intervalGD = setInterval(() => {
+//         if(countGD == gd.length) {
+//             clearInterval(intervalGD);
+//         } else {
+//             heading.textContent  += gd[countGD];
+//             countGD++;
+//         }
+//     }, 200);
+// }
+// function typeGD2() {
+//     let intervalGD2 = setInterval(() => {
+//         if(countGD2 == gd2.length) {
+//             clearInterval(intervalGD2);
+//         } else {
+//             heading2.textContent  += gd2[countGD2];
+//             countGD2++;
+//         }
+//     }, 200);
+// }
 function typeWD() {
     let intervalWD = setInterval(() => {
         if(countWD == wd.length) {
