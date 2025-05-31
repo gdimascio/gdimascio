@@ -403,7 +403,7 @@ section > div {
     max-height: 60px;
     position: absolute;
     left: 100%;
-    animation: scroll 12s linear infinite;
+    animation: scroll 13s linear infinite;
 }
 .tec-window > :nth-child(1){animation-delay: 0s}
 .tec-window > :nth-child(2){animation-delay: 1s}
@@ -417,6 +417,7 @@ section > div {
 .tec-window > :nth-child(10){animation-delay: 9s}
 .tec-window > :nth-child(11){animation-delay: 10s}
 .tec-window > :nth-child(12){animation-delay: 11s}
+.tec-window > :nth-child(13){animation-delay: 12s}
 
 @keyframes scroll{
     0%{left: 100%;}
